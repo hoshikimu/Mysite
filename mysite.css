@@ -5,6 +5,14 @@
 	list-style: none;
 }
 
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*header*/
+
 header {
 	width: 100%;
 	height: 70px;
@@ -36,6 +44,8 @@ header {
 	line-height: 70px;
 }
 
+/*main-visual*/
+
 .main-visual {
 	width: 100%;
 	height: 650px;
@@ -57,4 +67,102 @@ header {
 
 .main-vis-text p {
 	font-size: 20px;
+}
+
+/*portfolio*/
+
+.portfolio-container {
+	width: 920px;
+	margin: 0 auto;
+	color: #000;
+	text-align: center;
+}
+
+.pf-headline {
+	font-size: 32px;
+	padding-top: 90px;
+}
+
+.pf-headline::after {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	margin: 8px auto 0;
+	background-color: #EC715F;
+}
+
+.pf-text {
+	margin: 30px 0;
+	font-size: 16px;
+	color: #000;
+}
+
+.pf-images {
+	margin-bottom: 90px;
+}
+
+.pf-image1 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/sketch.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-image2 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/websuku.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-image3 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/write.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-image4 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/webcamp.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-image5 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/talk.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-image6 {
+	width: 300px;
+	height: 250px;
+	background-image: url(img/webcamp-mother.png);
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.pf-images div:nth-child(-n+3) {
+	margin-bottom: 10px;
+}
+
+.pf-images div:nth-child(1),
+.pf-images div:nth-child(2),
+.pf-images div:nth-child(4),
+.pf-images div:nth-child(5) {
+	margin-right: 10px;
 }
